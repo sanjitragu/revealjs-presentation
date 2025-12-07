@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>RevealJS Demo Presentation</title>
+
+  <!-- RevealJS Core -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/theme/black.css">
+
+  <!-- Code Highlighting -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/monokai.css">
+
+</head>
+<body>
+
+<div class="reveal">
+  <div class="slides">
+
+    <!-- Slide 1 -->
+    <section>
+      <h2>RevealJS Demo Presentation</h2>
+      <p><b>Email:</b> 24f3002886@ds.study.iitm.ac.in</p>
+      <p class="fragment">By Sanjit</p>
+
+      <aside class="notes">
+        Introduce yourself and mention this is a RevealJS demo.
+      </aside>
+    </section>
+
+    <!-- Slide 2: Markdown Slide -->
+    <section data-markdown>
+      <textarea data-template>
+## Markdown Slide
+
+This slide is written using **Markdown**.
+
+- Supports bullet lists
+- Simple formatting
+- Easy content editing
+
+> Markdown is powerful and readable!
+      </textarea>
+
+      <aside class="notes">
+        Explain that RevealJS allows Markdown inside slides using plugin.
+      </aside>
+    </section>
+
+    <!-- Slide 3: Fragments / Animation -->
+    <section>
+      <h2>Animated Elements (Fragments)</h2>
+      <ul>
+        <li class="fragment">First point appears</li>
+        <li class="fragment">Second point appears</li>
+        <li class="fragment">Third point appears</li>
+      </ul>
+
+      <aside class="notes">
+        Mention that these bullet points appear one by one.
+      </aside>
+    </section>
+
+    <!-- Slide 4: Code with Syntax Highlighting -->
+    <section>
+      <h2>Code with Syntax Highlighting</h2>
+
+      <pre><code class="language-python">
+# Python Example
+def compound_interest(p, r, t):
+    return p * (1 + r/100) ** t
+
+print(compound_interest(1000, 5, 2))
+      </code></pre>
+
+      <aside class="notes">
+        Describe this as a simple compound interest calculator.
+      </aside>
+    </section>
+
+    <!-- Slide 5: Math Equations -->
+    <section>
+      <h2>Mathematical Formula</h2>
+
+      <p>Compound Interest Formula:</p>
+
+      \[
+      A = P \left(1 + \frac{r}{n} \right)^{nt}
+      \]
+
+      <aside class="notes">
+        Explain financial computing using this formula.
+      </aside>
+    </section>
+
+    <!-- Slide 6 -->
+    <section>
+      <h2>Thank You!</h2>
+      <p>Email: 24f3002886@ds.study.iitm.ac.in</p>
+
+      <aside class="notes">
+        End the presentation with thanks.
+      </aside>
+    </section>
+
+  </div>
+</div>
+
+<!-- RevealJS Libraries -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/math/math.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5/plugin/notes/notes.js"></script>
+
+<script>
+  Reveal.initialize({
+    hash: true,
+    plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+  });
+</script>
+
+</body>
+</html>
